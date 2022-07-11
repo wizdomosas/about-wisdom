@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+}
+
+
+.banner{
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+.logo{
+  width: 50%;
+  float: left;
+  padding: 14px 16px;
+  color: white;
+}
+.linkbar{
+  width: 50%;
+  float: right;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+li {
+  float: left;
+  width: 20%;
+  list-style-type: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+/* banner end */
+.form-container{
+  margin: 0 auto;
+  max-width: 50%;
+  margin-top: 1rem;
+  background-color: red;
+  padding: 14px 16px;
+  border-radius: 1.5rem;
+  /* margin-bottom: 2rem; */
+}
+label{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+    
+      .form-control{
+        width: 100%;
+        height: 35px;
+        margin-bottom: 0.25rem;
+        border-radius: 2rem;
+        border: transparent;
+      }
+      /* .radio{
+          width: 30%;
+          height: 30px;
+      } */
+      /* FOOTER  */
+      .footer{
+        background-color: red;
+        padding: 16px 14px;
+        margin-top:2rem ;
+        text-align: center;
+        color: white;
+
+      }
+      /* FOOTER END */
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="logo"><h4>WISDOM SHAKA</h4></div>
+        <div class="linkbar">
+                   <li><a href="./index.html"> HOME</a></li>
+                   <li><a href="./contact.html">CONTACT</a></li>
+                   <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./reg.html">REGISTRATION</a></li>
+              </div>
+              </div>
+              <!-- banner end -->
+<div class="form-container">    
+    <form action="action_page.php" method="post">
+        <div>
+          <label for="fname">First Name</label>
+          <input type="text" name="fname" class="form-control">
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input type="text" name="lname" class="form-control"/>
+        </div>
+        <div>
+            <label for="phonenumber">Phone Number</label>
+            <input type="number" name="number" class="form-control">
+        </div>
+        <div>
+            <label for='address'> Address </label>
+            <input type="address" name="address" class="form-control">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="male" class="radio">Male
+                <label for="gender"></label>
+                <input type="radio" name="gender" class="radio">Female
+        </div>
+        <div>
+            <label for="country">Country</label>
+            <input type="text" name="country" class="form-control">
+        </div>
+        <div>
+            <label for="state">State/Province</label>
+            <input type="text" name="State" class="form-control">
+        </div>
+        <div>
+            <label for="email"> Email</label>
+            <input type="email" name="email" class="form-control">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control"></div>
+            <div>
+        <label for="confirm password">Confirm Password</label>
+        <input type="password" name="password" class="form-control"></div>
+      <p><button type="submit" class="form-control">Submit </button></p>
+    </form>
+    </div>
+      <!-- form-container end -->
+  <!-- footer section -->
+  <div class="footer">
+    <p>Copyright&copy;WISDOM SHAKA DESIGN</p>
+  </div>
+  <!-- footer section end -->
+  </div>
+
+</body>
+</html>
